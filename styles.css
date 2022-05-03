@@ -244,6 +244,7 @@ nav {
 .carousel-caption {
   background: rgba(0, 0, 0, 0.459);
   width: fit-content;
+  padding: 10px 10px 10px 10px !important;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: auto;
