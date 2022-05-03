@@ -17,6 +17,10 @@ body {
   color: white;
 }
 
+.bg-dark{
+  background-color: #000000 !important;
+}
+
 /* NAV BAR */
 
 nav {
@@ -26,16 +30,16 @@ nav {
   position: relative !important;
 }
 
+
 .nav-desk{
   display: none;
 }
 
 .marquee {
   position: absolute;
-  background-color: #242424;
-  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   width: 100%;
-  margin-top: 0px;
   overflow: hidden;
   text-transform: uppercase;
   --offset: 20vw;
@@ -55,7 +59,7 @@ nav {
 
 .marquee span {
   padding: 0 20px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
   font-style: italic;
   white-space: nowrap;
@@ -80,7 +84,7 @@ nav {
 }
 
 .offcanvas{
-  background-color: #242424 !important;
+  background-color: #000000 !important;
 }
 
 .offcanvas-title{
