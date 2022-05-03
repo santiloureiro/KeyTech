@@ -26,6 +26,10 @@ nav {
   position: relative !important;
 }
 
+.nav-desk{
+  display: none;
+}
+
 .marquee {
   position: absolute;
   background-color: #242424;
@@ -814,6 +818,26 @@ input:focus {
     gap: 5%;
     max-height: 100%;
   }
+
+  .nav-desk{
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .navbar-toggler{
+    display: none;
+  }
+
+  .nav-item-desk a{
+    color: white !important;
+    transition: all ease 0.3s;
+  }
+
+  .nav-item-desk a:hover{
+    color: #8d8d8d !important;
+  }
+  
+
 
   .nav--links li {
     background-color: rgb(0, 0, 0);
