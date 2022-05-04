@@ -27,7 +27,7 @@ nav {
   width: 100% !important;
   margin: auto;
   padding-bottom: 30px !important;
-  position: relative !important;
+  position: sticky !important;
 }
 
 
@@ -817,6 +817,12 @@ input:focus {
 
 /* LAPTOP */
 @media (min-width: 1024px) {
+
+  
+nav {
+  padding-bottom: 30px !important;
+}
+
 
   .nav--links {
     flex-direction: row;
