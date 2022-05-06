@@ -560,7 +560,8 @@ input {
   .keyboard-img--page {
     height: 180px; }
   .nosotros-wrapper {
-    width: 90%; }
+    width: 90%;
+    margin-top: 60px; }
   .nosotros-head div p {
     max-width: 800px; } }
 
