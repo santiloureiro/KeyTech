@@ -1,9 +1,12 @@
 
+.breadcrumb-wrapper{
+  display: none;
+}
+
 .product-wrapper{
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  
   
   .item-head {
     display: grid;
@@ -42,8 +45,6 @@
     text-align: center;
   }
   }
-  
-
   
   .item-img {
     grid-area: item-img;

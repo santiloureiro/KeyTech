@@ -181,9 +181,6 @@ nav {
   align-items: center;
   justify-content: center; }
 
-.breadcrumb-wrapper {
-  display: none; }
-
 .product-card {
   display: flex;
   flex-direction: column;
@@ -232,6 +229,9 @@ nav {
     transition: all 0.3s ease 0s; }
     .product-head a:hover {
       color: #3b3b3b; }
+
+.breadcrumb-wrapper {
+  display: none; }
 
 .product-wrapper {
   padding-top: 70px;
