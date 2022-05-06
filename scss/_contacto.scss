@@ -1,3 +1,4 @@
+
 .contact-head {
     display: flex;
     flex-flow: column;
@@ -42,7 +43,7 @@
         left: 0;
         right: 0;
 
-        button:hover {
+        &:hover {
           background: #adadad40;
         }
     

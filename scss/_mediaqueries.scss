@@ -6,11 +6,6 @@
     width: 80%;
   }
 
-  .nav--links {
-    flex-direction: row;
-    gap: 5%;
-  }
-
   .head-section {
     grid-template-columns: repeat(2 1fr);
     grid-template-areas: "header-text header-img";
@@ -188,20 +183,6 @@
     padding-bottom: 40px;
   }  
 
-  .products-imgs {
-    grid-gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .products-imgs div h3,
-  .products-imgs div p {
-    font-size: 19px;
-  }
-
-  .keyboard-img--page {
-    height: 180px;
-  }
-
   .contact-head{
     margin-top: 40px;
   }
@@ -225,17 +206,8 @@
   }
 
   .featured-images div {
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .featured-images {
-    gap: 100px;
-  }
-
-  .keyboard-img {
-    height: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .product-wrapper {

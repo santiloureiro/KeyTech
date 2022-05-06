@@ -55,6 +55,16 @@ a {
         white-space: nowrap;
       }
 
+    @keyframes marquee {
+        0% {
+            transform: translate3d(var(--move-initial), 0, 0);
+        }
+      
+        100% {
+            transform: translate3d(var(--move-final), 0, 0);
+        }
+      }
+
     &:hover .marquee__inner {
         animation-play-state: running;
       }
@@ -69,17 +79,6 @@ a {
     transform: translate3d(var(--move-initial), 0, 0);
     animation: marquee 8s linear infinite;
     animation-play-state: running;
-  }
-
-
-  @keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
-  
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
-    }
   }
   
   .offcanvas{
@@ -110,19 +109,21 @@ a {
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 1s;
+
+    @keyframes fade-in-up {
+      0%{
+        opacity: 0%;
+        transform: translateY(30px);
+      }
+      
+      100%{
+        opacity: 100%;
+      }
+    }
   
   }
   
-  @keyframes fade-in-up {
-    0%{
-      opacity: 0%;
-      transform: translateY(30px);
-    }
-    
-    100%{
-      opacity: 100%;
-    }
-  }
+
   
 @import "index";
 
@@ -272,6 +273,12 @@ a {
   
   .footer-social {
     grid-area: redes;
+
+    .footer-social--logos img {
+      width: auto;
+      height: 20px;
+      
+    }
   }
   
   .footer-products {
@@ -291,11 +298,7 @@ a {
 
   }
   
-  .footer-social--logos img {
-    width: auto;
-    height: 20px;
-    
-  }
+
   
   .footer-nav,
   .footer-social,
@@ -319,19 +322,15 @@ a {
       padding-top: 20px;
     }
     
-
+     a:hover {
+      opacity: 60%;
+    }
   }
   
   .footer-social li a,
   .footer-links li a {
     color: white;
     transition: all 0.2s ease;
-  }
-  
-  .footer-products ul a:hover,
-  .footer-social li a:hover,
-  .footer-links li a:hover {
-    opacity: 50%;
   }
   
   
