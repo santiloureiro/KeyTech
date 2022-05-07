@@ -149,7 +149,8 @@ nav {
   padding: 10px 10px 10px 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  margin: auto; }
+  margin: auto;
+  display: none; }
 
 .animation-video-wrapper {
   text-align: center;
@@ -590,6 +591,8 @@ input {
     display: none; }
   .featured-section--header {
     max-width: none; }
+  .carousel-caption {
+    display: flex; }
   .video-section {
     margin-bottom: 60px; }
   .animation-video-wrapper {
