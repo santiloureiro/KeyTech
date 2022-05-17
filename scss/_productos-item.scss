@@ -1,7 +1,12 @@
 
 .breadcrumb-wrapper{
   display: none;
+
+  .breadcrumb-item a {
+    color: #3e80fc;
+  }
 }
+
 
 .product-wrapper{
     padding-top: 70px;
@@ -49,9 +54,7 @@
   .item-img {
     grid-area: item-img;
   
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    @extend .flex-center-all;
   }
   
   .keyboard-img--page {

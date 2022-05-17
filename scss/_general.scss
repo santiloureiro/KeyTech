@@ -4,9 +4,27 @@
     padding: 0;
     list-style: none;
   }
+
+  @mixin padding-sides ($padding-left, $padding-right) {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+
+@mixin padding-top-bottom ($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+.flex-center-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   
 a {
     text-decoration: none;
+    color: white;
   }
   
   body {

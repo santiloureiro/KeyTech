@@ -4,8 +4,14 @@
   padding: 0;
   list-style: none; }
 
+.flex-center-all, .contact-section, .item-img, .contact-head, .nosotros-head {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -301,7 +307,7 @@ input {
 .carousel-caption {
   background: rgba(0, 0, 0, 0.459);
   width: fit-content;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: auto;
@@ -332,10 +338,7 @@ input {
   justify-content: center; }
 
 .contact-section {
-  grid-area: contact;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  grid-area: contact; }
 
 .product-card {
   display: flex;
@@ -388,6 +391,8 @@ input {
 
 .breadcrumb-wrapper {
   display: none; }
+  .breadcrumb-wrapper .breadcrumb-item a {
+    color: #3e80fc; }
 
 .product-wrapper {
   padding-top: 70px;
@@ -423,10 +428,7 @@ input {
     text-align: center; }
 
 .item-img {
-  grid-area: item-img;
-  display: flex;
-  justify-items: center;
-  align-items: center; }
+  grid-area: item-img; }
 
 .keyboard-img--page {
   border-radius: 10px;
@@ -437,9 +439,7 @@ input {
     transform: scale(1.1); }
 
 .contact-head {
-  display: flex;
   flex-flow: column;
-  align-items: center;
   text-align: center;
   padding: 20px;
   color: white; }
@@ -487,10 +487,8 @@ input {
   animation-duration: 1s; }
 
 .nosotros-head {
-  display: flex;
   flex-flow: column;
   text-align: center;
-  align-items: center;
   color: white;
   position: relative;
   padding: 70px;
@@ -521,6 +519,36 @@ input {
     background-size: cover;
     background-position: top center;
     opacity: 0.07; }
+
+.boton-redes-twitter {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background-color: #74ccff; }
+  .boton-redes-twitter a:hover {
+    color: black;
+    transition: 0.3s all ease; }
+
+.boton-redes-instagram {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background-color: #ff38cd; }
+  .boton-redes-instagram a:hover {
+    color: black;
+    transition: 0.3s all ease; }
 
 /* TABLET */
 @media (min-width: 765px) {
