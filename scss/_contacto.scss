@@ -1,0 +1,53 @@
+
+.contact-head {
+  @extend .flex-center-all;
+    
+    flex-flow: column;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .contact-social {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    color: white;
+
+    ul{
+      padding: 0;
+
+      li a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease 0s;
+        color: rgb(255, 255, 255);
+      }
+
+      li button {
+        padding: 14px;
+        margin: 20px auto 20px auto;
+        width: fit-content;
+        text-align: center;
+      
+        transition: all 0.3s ease 0s;
+      
+      
+        @extend .glassmorphism-background;
+
+        left: 0;
+        right: 0;
+
+        &:hover {
+          background: #adadad40;
+        }
+    
+        i {
+          padding-right: 10px;
+        }
+    
+        }
+      
+    }
+  }
