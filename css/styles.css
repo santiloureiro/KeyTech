@@ -9,6 +9,15 @@
   justify-content: center;
   align-items: center; }
 
+.glassmorphism-background, .contact-form, textarea,
+input, .send-button, .animation-video-wrapper div h3, .contact-social ul li button {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); }
+
 a {
   text-decoration: none;
   color: white; }
@@ -92,12 +101,6 @@ nav {
     opacity: 100%; } }
 
 .contact-form {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   left: 0;
   right: 0;
   display: flex;
@@ -128,12 +131,7 @@ nav {
 
 textarea,
 input {
-  background: rgba(255, 255, 255, 0.089);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18); }
+  text-indent: 10px; }
   textarea:focus,
   input:focus {
     outline: none; }
@@ -151,6 +149,7 @@ input {
   justify-content: center; }
 
 .send-button {
+  background: #800ae580;
   min-width: 130px;
   height: 40px;
   color: #fff;
@@ -163,13 +162,7 @@ input {
   outline: none;
   border-radius: 5px;
   border: none;
-  background-size: 120% auto;
-  background: #800ae580;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18); }
+  background-size: 120% auto; }
   .send-button:hover {
     background: #fff;
     color: #7605da; }
@@ -280,10 +273,21 @@ input {
 
 #featured-section--headh3 {
   font-size: 1.5em;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5%; }
 
 .featured-p {
   text-align: center; }
+
+.featured-wrapper {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-shadow: 1px 1px 1px #585858; }
 
 .featured-images {
   grid-area: featured-imgs;
@@ -320,12 +324,6 @@ input {
   justify-content: flex-end;
   align-items: center; }
   .animation-video-wrapper div h3 {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 10px;
     font-size: 1.4em;
     margin-bottom: 30px; }
@@ -463,12 +461,6 @@ input {
       width: fit-content;
       text-align: center;
       transition: all 0.3s ease 0s;
-      background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
       left: 0;
       right: 0; }
       .contact-social ul li button:hover {
@@ -578,6 +570,8 @@ input {
     display: flex;
     flex-direction: column;
     gap: 10px; }
+  #featured-section--headh3 {
+    margin-top: 0; }
   .product-card {
     flex-direction: column;
     width: 100%;

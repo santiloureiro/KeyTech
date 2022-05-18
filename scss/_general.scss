@@ -21,6 +21,15 @@
   align-items: center;
 }
 
+.glassmorphism-background{
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
   
 a {
     text-decoration: none;
@@ -32,7 +41,7 @@ a {
     background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
       rgba(171, 102, 255, 1) 0%,
-      rgba(116, 182, 247, 1) 90%
+      #74b6f7 90%
     );
     color: white;
   }
@@ -141,12 +150,7 @@ a {
 //Formulario
   
   .contact-form {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    @extend .glassmorphism-background;
   
     left: 0;
     right: 0;
@@ -186,12 +190,8 @@ a {
 
   textarea,
   input {
-    background: rgba(255, 255, 255, 0.089);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    @extend .glassmorphism-background;
+    text-indent: 10px;
 
     &:focus{
       outline: none;
@@ -214,6 +214,9 @@ a {
   }
   
   .send-button {
+    @extend .glassmorphism-background;
+    background: #800ae580;
+    
     min-width: 130px;
     height: 40px;
     color: #fff;
@@ -227,12 +230,6 @@ a {
     border-radius: 5px;
     border: none;
     background-size: 120% auto;
-    background: #800ae580;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
 
     &:hover {
       background: #fff;

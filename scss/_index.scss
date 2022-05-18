@@ -50,11 +50,25 @@
   #featured-section--headh3 {
     font-size: 1.5em;
     text-align: center;
+    margin-top: 5%;
   }
   
   .featured-p{
     text-align: center;
   }
+
+  .featured-wrapper{
+    
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-shadow: 1px 1px 1px rgb(88, 88, 88);
+  }
+
   
   .featured-images {
     grid-area: featured-imgs;
@@ -101,12 +115,7 @@
     align-items: center;
 
     div h3{
-      background: rgba( 255, 255, 255, 0.2 );
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 3.5px );
-      -webkit-backdrop-filter: blur( 3.5px );
-      border-radius: 10px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      @extend .glassmorphism-background;
       padding: 10px;
       font-size: 1.4em;
       margin-bottom: 30px;
