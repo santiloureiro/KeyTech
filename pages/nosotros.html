@@ -1,119 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/png" href="../resources/LOGO KT Blanco.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Montserrat-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="keywords" content="keyboards, mechanical keyboards, keyboards build, best keyboards for typing, custom keyboards, custom mechanical keyboards,
+  teclado, teclado custom, teclado personalizado, perifericos,">
+  
+  <meta name="description" content="Empresa apasionada por los teclados mecanicos, amamos como suenan y como se sienten. Por eso elegimos crear teclados personalizados, que combinan un estilo y sensaciones de tipeo increibles">
 
-    <title>KeyTech - Nosotros</title>
-  </head>
-  <body>
-    <nav>
-      <label class="logo">
-          <a href="../index.html"><img src="../resources/LOGO KT Blanco.png" alt=""></a>
-      </label>
-      <input id="collapsible" class="toggle" type="checkbox">
-      <label for="collapsible" class="label-toggle">Menu</label>
-      <ul class="nav--links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
+  <title>KeyTech - Nosotros</title>
+
+  <!-- Bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../resources/LOGO KT Blanco.png" />
+
+  <!--Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark fixed-top w-100 pb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../resources/LOGO KT Blanco.png" alt="" width="30" height="fit-content"
+          class="d-inline-block align-text-top">
+        KeyTech </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">KeyTech</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <ul class="nav-desk">
+        <li class="nav-item-desk">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item-desk">
+          <a class="nav-link" href="productos.html">Productos</a>
+        </li>
+        <li class="nav-item-desk">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item-desk">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
       </ul>
-    </nav>
+    </div>
 
-    <div class="nosotros-wrapper">
+    <div class="marquee">
+      <div class="marquee__inner" aria-hidden="true">
+        <span>3 y 6 cuotas sin interés // Envío en menos de 48hs hábiles // Envíos gratis en compras > $400</span>
+        <span>3 y 6 cuotas sin interés // Envío en menos de 48hs hábiles // Envíos gratis en compras > $400</span>
+        <span>3 y 6 cuotas sin interés // Envío en menos de 48hs hábiles // Envíos gratis en compras > $400</span>
+        <span>3 y 6 cuotas sin interés // Envío en menos de 48hs hábiles // Envíos gratis en compras > $400</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nosotros-wrapper">
 
 
     <main>
-      <section class="nosotros-section">
-      <div class="nosotros-head">
-        
-        <div>
-          <h1>Somos KeyTech</h1>
-          <p>
-            Una empresa apasionada con los teclado mecanicos custom. Nuestro
-            objetivo es darle a nuestros clientes la mayor calidad de materiales
-            y sensaciones.
-          </p>
-          <p id="nosotros-p2">
-            Podes elegir las opciones en nuestra pagina o tambien podes
-            contactarnos para que te hagamos uno a medida!
-          </p>
-        </div>
+      <section>
+        <div class="nosotros-head">
 
-      </div>
+          <div>
+            <h1>Somos KeyTech</h1>
+            <p>
+              Una empresa apasionada con los teclado mecanicos custom. Nuestro
+              objetivo es darle a nuestros clientes la mayor calidad de materiales
+              y sensaciones.
+            </p>
+            <p id="nosotros-p2">
+              Podes elegir las opciones en nuestra pagina o tambien podes
+              contactarnos para que te hagamos uno a medida!
+            </p>
+          </div>
+
+          <div class="nosotros-icons">
+              <button class="boton-redes-instagram"><a href="https://www.instagram.com/keytechkeyboards/" target="_blank"><i class="bi bi-instagram"></i></a></button>
+
+              <button class="boton-redes-twitter"><a href="https://twitter.com/KeyTech14" target="_blank"><i class="bi bi-twitter"></i></a></button>
+          </div>
+
+        </div>
       </section>
     </main>
 
-    </div>
+  </div>
 
-    <footer class="footer-section">
-      <div class="footer-columns">
+  <footer class="footer-section">
+    <div class="footer-columns">
       <div class="footer-img">
-      <img
-        src="../resources/LOGO KT Blanco.png"
-        alt="Keytech Logo"
-        width="50"
-        height="50"
-      />
-    </div>
-      
+        <img src="../resources/LOGO KT Blanco.png" alt="Keytech Logo" width="50" height="50" />
+      </div>
+
       <div class="footer-nav">
         <label>Navegacion:</label>
-      <ul class="footer-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-      </ul>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
       </div>
       <div class="footer-social">
         <label>Redes:</label>
         <ul>
           <li>
-            <a
-              href="https://www.instagram.com/keytechkeyboards/"
-              target="_blank"
-              ><img
-                src="../resources/logotipo-de-instagramWhite.png"
-                alt="Instagram Logo"
-                width="20"
-                height="20"
-            /></a>
+            <a href="https://www.instagram.com/keytechkeyboards/" target="_blank"><img
+                src="../resources/logotipo-de-instagramWhite.png" alt="Instagram Logo" width="20" height="20" /></a>
           </li>
-  
+
           <li>
-            <a href="https://twitter.com/KeyTech14" 
-               target="_blank"
-              ><img
-                src="../resources/twitter.svg"
-                alt="Facebook Logo"
-                width="20"
-                height="20"
-            /></a>
+            <a href="https://twitter.com/KeyTech14" target="_blank"><img src="../resources/twitter.svg"
+                alt="Facebook Logo" width="20" height="20" /></a>
           </li>
         </ul>
       </div>
-  
+
       <div class="footer-products">
         <label for="">Productos:</label>
         <ul>
-          <li><a href="../pages/product-items/blueberry.html">Blueberry</li></a>
-          <li><a href="../pages/product-items/nightlight.html">Night light</li></a>
-          <li><a href="../pages/product-items/bluesky.html">Blue Sky</li></a>
+          <div class="dropdown">
+            <a class="btn btn-light text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Ver mas
+            </a>
+
+            <ul class="dropdown-menu text-black" aria-labelledby="dropdownMenuLink">
+              <li><a href="product-items/blueberry.html">Blueberry</a>
+              <li><a href="product-items/nightlight.html">Night light</li></a>
+              <li><a href="product-items/bluesky.html">Blue Sky</li></a>
+            </ul>
+          </div>
         </ul>
       </div>
-  </body>
+    </div>
+
+
+
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
