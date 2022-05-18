@@ -138,9 +138,9 @@ input {
 
 .form-input {
   border-radius: 5px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: rgba(179, 179, 179, 0);
   font-family: "Montserrat", sans-serif;
   font-weight: 500; }
 
