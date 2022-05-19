@@ -134,7 +134,8 @@ input {
   text-indent: 10px; }
   textarea:focus,
   input:focus {
-    outline: none; }
+    outline: 3.5px solid rgba(15, 15, 15, 0.24);
+    transition: 0.1s all ease-in-out; }
 
 .form-input {
   border-radius: 5px;
