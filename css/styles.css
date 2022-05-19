@@ -598,8 +598,6 @@ input {
   .nav-desk {
     display: flex;
     margin-top: 20px; }
-  .navbar-toggler {
-    display: none; }
   .nav-item-desk a {
     color: white;
     transition: all ease 0.3s; }
