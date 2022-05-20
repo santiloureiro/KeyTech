@@ -8,3 +8,28 @@ $bg-light: #ffff;
 $text-white: #ffff;
 
 $bg-grey: rgb(170, 170, 170);
+
+@mixin padding-sides ($padding-left, $padding-right) {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+
+@mixin padding-top-bottom ($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+.glassmorphism-background{
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.flex-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
