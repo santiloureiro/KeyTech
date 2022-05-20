@@ -246,6 +246,8 @@ input {
   grid-template-columns: 1fr;
   grid-template-areas: "header-text" "header-img";
   padding-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
   text-align: center;
   place-items: center; }
 
@@ -255,8 +257,8 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  max-width: 250px; }
+  width: 80%;
+  padding-bottom: 50px; }
 
 .header-buttons {
   display: flex;
@@ -300,7 +302,8 @@ input {
       box-shadow: none; }
 
 #header-img {
-  grid-area: header-img; }
+  grid-area: header-img;
+  display: none; }
   #header-img img {
     width: auto;
     height: 100px; }
@@ -605,9 +608,12 @@ input {
     align-items: flex-start;
     padding-bottom: 0;
     max-width: 450px; }
-  #header-img img {
-    width: auto;
-    height: 150px; }
+  #header-img {
+    display: flex; }
+    #header-img img {
+      width: auto;
+      height: 150px;
+      display: flex; }
   .header-buttons {
     flex-direction: row; }
   .buyNow-button, .header-buttons .us-button {

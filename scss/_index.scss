@@ -9,6 +9,8 @@
       "header-img";
   
     padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     text-align: center;
     place-items: center;
   }
@@ -20,9 +22,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    
+    width: 80%;
     padding-bottom: 50px; 
-    max-width: 250px;
   }
 
   .header-buttons{
@@ -94,6 +96,7 @@
   
   #header-img {
     grid-area: header-img;
+    display: none;
 
     img {
       width: auto;

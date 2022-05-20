@@ -26,10 +26,16 @@
     max-width: 450px;
   }
 
-  #header-img img {
+  #header-img {
+    display: flex;
+
+  
+    img {
     width: auto;
     height: 150px;
+    display: flex;
   }
+}
 
   .header-buttons{
     flex-direction: row;
