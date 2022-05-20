@@ -42,7 +42,7 @@
         transition: all 0.3s ease 0s;
       
       
-        background-color: $baby-blue;
+        background-color: #79c279;
         border: none;
         border-radius: 10px;
         color: white;
@@ -53,7 +53,8 @@
 
         i{
           display: none;
-          color:$baby-blue;
+          color:#79c279;
+          text-shadow: none;
         }
 
         &:hover {
@@ -73,15 +74,16 @@
       @extend #buyNow-button;
 
       background-color: rgb(255, 255, 255);
-      box-shadow:0px 0px 0px 3px $baby-blue inset;
-      color: $baby-blue;
+      
+      color: $magenta;
 
+      text-shadow: none;
       a{
-        color: $baby-blue;
+        color: $magenta;
       }
 
       i{
-        color: $baby-blue;
+        color: $magenta;
       }
       &:hover {
         box-shadow: none;
