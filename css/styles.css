@@ -263,11 +263,11 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .header-buttons #buyNow-button, .header-buttons #us-button {
+  .header-buttons .buyNow-button, .header-buttons .us-button {
     padding: 14px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 180px;
+    width: 230px;
     text-align: center;
     justify-content: center;
     transition: all 0.3s ease 0s;
@@ -278,25 +278,25 @@ input {
     font-weight: 600;
     left: 0;
     right: 0; }
-    .header-buttons #buyNow-button i, .header-buttons #us-button i {
+    .header-buttons .buyNow-button i, .header-buttons .us-button i {
       display: none;
       color: #79c279;
       text-shadow: none; }
-    .header-buttons #buyNow-button:hover, .header-buttons #us-button:hover {
+    .header-buttons .buyNow-button:hover, .header-buttons .us-button:hover {
       background-color: white; }
-      .header-buttons #buyNow-button:hover span, .header-buttons #us-button:hover span {
+      .header-buttons .buyNow-button:hover span, .header-buttons .us-button:hover span {
         display: none; }
-      .header-buttons #buyNow-button:hover i, .header-buttons #us-button:hover i {
+      .header-buttons .buyNow-button:hover i, .header-buttons .us-button:hover i {
         display: inline-block; }
-  .header-buttons #us-button {
+  .header-buttons .us-button {
     background-color: white;
     color: #ab66ff;
     text-shadow: none; }
-    .header-buttons #us-button a {
+    .header-buttons .us-button a {
       color: #ab66ff; }
-    .header-buttons #us-button i {
+    .header-buttons .us-button i {
       color: #ab66ff; }
-    .header-buttons #us-button:hover {
+    .header-buttons .us-button:hover {
       box-shadow: none; }
 
 #header-img {
@@ -610,7 +610,10 @@ input {
     height: 150px; }
   .header-buttons {
     flex-direction: row; }
-  #us-button {
+  .buyNow-button, .header-buttons .us-button {
+    width: 180px; }
+  .us-button {
+    width: 180px;
     margin-left: 20px; }
   .form-info textarea {
     width: 400px;
