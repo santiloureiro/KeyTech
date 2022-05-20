@@ -1,5 +1,5 @@
 .glassmorphism-background, .contact-form, textarea,
-input, .send-button, .animation-video-wrapper div h3, .contact-social ul li button {
+input, .send-button, .animation-video-wrapper div h3, .contact-social ul .social-button {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
@@ -258,6 +258,46 @@ input {
   padding-bottom: 50px;
   max-width: 250px; }
 
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header-buttons #buyNow-button, .header-buttons #us-button {
+    padding: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 180px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    background-color: #74b6f7;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    left: 0;
+    right: 0; }
+    .header-buttons #buyNow-button i, .header-buttons #us-button i {
+      display: none;
+      color: #74b6f7; }
+    .header-buttons #buyNow-button:hover, .header-buttons #us-button:hover {
+      background-color: white; }
+      .header-buttons #buyNow-button:hover span, .header-buttons #us-button:hover span {
+        display: none; }
+      .header-buttons #buyNow-button:hover i, .header-buttons #us-button:hover i {
+        display: inline-block; }
+  .header-buttons #us-button {
+    background-color: white;
+    box-shadow: 0px 0px 0px 3px #74b6f7 inset;
+    color: #74b6f7; }
+    .header-buttons #us-button a {
+      color: #74b6f7; }
+    .header-buttons #us-button i {
+      color: #74b6f7; }
+    .header-buttons #us-button:hover {
+      box-shadow: none; }
+
 #header-img {
   grid-area: header-img; }
   #header-img img {
@@ -455,19 +495,21 @@ input {
       text-decoration: none;
       display: flex;
       align-items: center;
+      justify-content: center;
       transition: all 0.3s ease 0s;
       color: white; }
-    .contact-social ul li button {
+    .contact-social ul .social-button {
       padding: 14px;
-      margin: 20px auto 20px auto;
+      margin: 20px 0 20px 0;
       width: fit-content;
       text-align: center;
+      color: white;
       transition: all 0.3s ease 0s;
       left: 0;
       right: 0; }
-      .contact-social ul li button:hover {
+      .contact-social ul .social-button:hover {
         background: #adadad40; }
-      .contact-social ul li button i {
+      .contact-social ul .social-button i {
         padding-right: 10px; }
 
 .nosotros-wrapper {
@@ -559,11 +601,16 @@ input {
   #header-text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding-bottom: 0;
     max-width: 450px; }
   #header-img img {
     width: auto;
     height: 150px; }
+  .header-buttons {
+    flex-direction: row; }
+  #us-button {
+    margin-left: 20px; }
   .form-info textarea {
     width: 400px;
     max-width: 400px;

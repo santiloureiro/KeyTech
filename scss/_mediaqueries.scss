@@ -20,6 +20,7 @@
   #header-text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     padding-bottom: 0;
     max-width: 450px;
@@ -28,6 +29,15 @@
   #header-img img {
     width: auto;
     height: 150px;
+  }
+
+  .header-buttons{
+    flex-direction: row;
+    
+  }
+
+  #us-button{
+    margin-left: 20px;
   }
 
   .form-info textarea {

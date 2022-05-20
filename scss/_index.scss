@@ -24,6 +24,71 @@
     padding-bottom: 50px; 
     max-width: 250px;
   }
+
+  .header-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #buyNow-button{
+        padding: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 180px;
+        text-align: center;
+        justify-content: center;
+      
+        transition: all 0.3s ease 0s;
+      
+      
+        background-color: $baby-blue;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: 600;
+
+        left: 0;
+        right: 0;
+
+        i{
+          display: none;
+          color:$baby-blue;
+        }
+
+        &:hover {
+          background-color: rgb(255, 255, 255);
+
+          span{
+            display: none;
+          }
+          i{
+            display:inline-block;
+          }
+        }
+  
+    }
+
+    #us-button{
+      @extend #buyNow-button;
+
+      background-color: rgb(255, 255, 255);
+      box-shadow:0px 0px 0px 3px $baby-blue inset;
+      color: $baby-blue;
+
+      a{
+        color: $baby-blue;
+      }
+
+      i{
+        color: $baby-blue;
+      }
+      &:hover {
+        box-shadow: none;
+        }
+    }
+  }
+
   
   #header-img {
     grid-area: header-img;
