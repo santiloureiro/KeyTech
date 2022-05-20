@@ -119,18 +119,28 @@
 
   .video-section {
     margin-bottom: 60px;
+
+    .animation-video-wrapper {
+      flex-direction: row-reverse;
+
+      .video-title{
+        justify-content: flex-start;
+        font-size: 1.2em;
+      }
+
+      .animation-video {
+        width: 70%;
+        height: fit-content;
+        border-radius: 20px;
+        justify-content: flex-start;
+      }
+
+    }
+  
   }
 
-  .animation-video-wrapper {
-    flex-direction: row-reverse;
-  }
 
-  .animation-video {
-    width: 70%;
-    height: fit-content;
-    border-radius: 20px;
-    justify-content: flex-start;
-  }
+
 
   .footer-columns {
     display: grid;

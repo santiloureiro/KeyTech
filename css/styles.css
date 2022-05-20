@@ -323,7 +323,8 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 50px; }
   .animation-video-wrapper div h3 {
     padding: 10px;
     font-size: 1.4em;
@@ -616,13 +617,16 @@ input {
     display: flex; }
   .video-section {
     margin-bottom: 60px; }
-  .animation-video-wrapper {
-    flex-direction: row-reverse; }
-  .animation-video {
-    width: 70%;
-    height: fit-content;
-    border-radius: 20px;
-    justify-content: flex-start; }
+    .video-section .animation-video-wrapper {
+      flex-direction: row-reverse; }
+      .video-section .animation-video-wrapper .video-title {
+        justify-content: flex-start;
+        font-size: 1.2em; }
+      .video-section .animation-video-wrapper .animation-video {
+        width: 70%;
+        height: fit-content;
+        border-radius: 20px;
+        justify-content: flex-start; }
   .footer-columns {
     display: grid;
     grid-template-columns: repeat(4 1fr);
