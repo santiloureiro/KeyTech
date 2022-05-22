@@ -494,23 +494,25 @@ input {
   text-align: center;
   color: white; }
   .contact-social ul {
-    padding: 0; }
-    .contact-social ul li a {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .contact-social ul .social-button {
       text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.3s ease 0s;
-      color: white; }
-    .contact-social ul .social-button {
+      color: white;
       padding: 14px;
       margin: 20px 0 20px 0;
       width: fit-content;
       text-align: center;
       color: white;
-      transition: all 0.3s ease 0s;
-      left: 0;
-      right: 0; }
+      transition: all 0.3s ease 0s; }
       .contact-social ul .social-button:hover {
         background: #adadad40; }
       .contact-social ul .social-button i {
