@@ -662,7 +662,7 @@ input {
     .nav-item-desk a:hover {
       color: #8d8d8d; }
   .head-section {
-    gap: 400px;
+    gap: 200px;
     padding-top: 150px; }
   #header-text {
     max-width: 650px; }
