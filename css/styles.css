@@ -319,7 +319,9 @@ input {
   margin-top: 15%; }
 
 .featured-p {
-  text-align: center; }
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%; }
 
 .featured-wrapper {
   background: rgba(255, 255, 255, 0.15);
