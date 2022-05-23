@@ -244,10 +244,7 @@ input {
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "header-text" "header-img";
-  padding-top: 20px;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  height: 80vh;
   text-align: center;
   place-items: center; }
 
@@ -319,7 +316,7 @@ input {
 #featured-section--headh3 {
   font-size: 1.5em;
   text-align: center;
-  margin-top: 5%; }
+  margin-top: 15%; }
 
 .featured-p {
   text-align: center; }
@@ -330,7 +327,6 @@ input {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  margin-top: 50px;
   margin-bottom: 100px;
   text-shadow: 1px 1px 1px #585858; }
 
@@ -600,8 +596,6 @@ input {
     grid-template-columns: repeat(2 1fr);
     grid-template-areas: "header-text header-img";
     margin: auto;
-    padding-top: 90px;
-    padding-bottom: 150px;
     text-align: left;
     place-items: center start; }
   #header-text {
@@ -663,9 +657,6 @@ input {
     transition: all ease 0.3s; }
     .nav-item-desk a:hover {
       color: #8d8d8d; }
-  .head-section {
-    gap: 200px;
-    padding-top: 150px; }
   #header-text {
     max-width: 650px; }
   .label-toggle {

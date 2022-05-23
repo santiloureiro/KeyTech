@@ -11,8 +11,6 @@
     grid-template-areas: "header-text header-img";
 
     margin: auto;
-    padding-top: 90px;
-    padding-bottom: 150px;
     text-align: left;
     place-items: center start;
   }
@@ -114,11 +112,6 @@
     &:hover {
       color: #8d8d8d;
     }
-  }
-
-  .head-section {
-    gap: 200px;
-    padding-top: 150px;
   }
 
   #header-text {
