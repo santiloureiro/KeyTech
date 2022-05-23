@@ -316,7 +316,9 @@ input {
 #featured-section--headh3 {
   font-size: 1.5em;
   text-align: center;
-  margin-top: 15%; }
+  margin-top: 15%;
+  font-weight: 800;
+  text-transform: capitalize; }
 
 .featured-p {
   text-align: center;
@@ -329,8 +331,7 @@ input {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  margin-bottom: 100px;
-  text-shadow: 1px 1px 1px #585858; }
+  margin-bottom: 100px; }
 
 .featured-images {
   grid-area: featured-imgs;
