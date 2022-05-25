@@ -538,8 +538,6 @@ input {
   font-size: 1.2em;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.18); }
   .nosotros-head div h1 {
@@ -554,7 +552,7 @@ input {
   .nosotros-head #nosotros-p2 {
     position: relative;
     font-weight: 700;
-    max-width: 480px;
+    max-width: 180px;
     margin: auto; }
     .nosotros-head #nosotros-p2 .p2-link {
       color: black;
@@ -667,8 +665,10 @@ input {
     height: 180px; }
   .nosotros-wrapper {
     height: 95vh; }
-    .nosotros-wrapper .nosotros-head #nosotros-p2 .p2-link i {
-      display: inline-block; }
+    .nosotros-wrapper .nosotros-head #nosotros-p2 {
+      max-width: 480px; }
+      .nosotros-wrapper .nosotros-head #nosotros-p2 .p2-link i {
+        display: inline-block; }
   .nosotros-icons {
     flex-direction: row; }
   .nosotros-head div p {
