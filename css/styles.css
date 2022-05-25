@@ -518,10 +518,10 @@ input {
         padding-right: 10px; }
 
 .nosotros-wrapper {
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 5vh;
   display: grid;
   gap: 20px;
-  padding-top: 80px;
   animation-name: fade-in-up;
   animation-iteration-count: 1;
   animation-timing-function: ease;
@@ -532,23 +532,41 @@ input {
   text-align: center;
   color: white;
   position: relative;
-  padding: 70px;
-  font-size: 1.3em;
+  padding: 30px;
+  height: 95vh;
+  min-height: 200px;
+  font-size: 1.2em;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.18); }
   .nosotros-head div h1 {
-    position: relative; }
+    position: relative;
+    margin: 20px;
+    font-weight: 800; }
     .nosotros-head div h1 p {
       position: relative;
       max-width: 500px;
       padding-top: 20px;
       font-weight: 500; }
   .nosotros-head #nosotros-p2 {
-    font-weight: 700; }
+    position: relative;
+    font-weight: 700;
+    max-width: 480px;
+    margin: auto; }
+    .nosotros-head #nosotros-p2 .p2-link {
+      color: black;
+      font-weight: 800;
+      transition: 0.3s all ease;
+      border-radius: 10px; }
+      .nosotros-head #nosotros-p2 .p2-link i {
+        display: none; }
+      .nosotros-head #nosotros-p2 .p2-link:hover {
+        color: white;
+        padding: 5px;
+        background-color: #000000; }
   .nosotros-head::before {
     content: "";
     position: absolute;
@@ -561,35 +579,42 @@ input {
     background-position: top center;
     opacity: 0.07; }
 
-.boton-redes-twitter {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position: relative;
-  margin: 20px;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  background-color: #74ccff; }
-  .boton-redes-twitter a:hover {
-    color: black;
-    transition: 0.3s all ease; }
-
-.boton-redes-instagram {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position: relative;
-  margin: 20px;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  background-color: #ff38cd; }
-  .boton-redes-instagram a:hover {
-    color: black;
-    transition: 0.3s all ease; }
+.nosotros-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; }
+  .nosotros-icons .boton-redes-twitter {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #74ccff; }
+    .nosotros-icons .boton-redes-twitter:hover {
+      background-color: white;
+      color: #74ccff;
+      transition: 0.3s all ease; }
+  .nosotros-icons .boton-redes-instagram {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #ff38cd; }
+    .nosotros-icons .boton-redes-instagram:hover {
+      background-color: white;
+      color: #ff38cd;
+      transition: 0.3s all ease; }
 
 /* TABLET */
 @media (min-width: 765px) {
@@ -641,8 +666,11 @@ input {
   .keyboard-img--page {
     height: 180px; }
   .nosotros-wrapper {
-    width: 90%;
-    margin-top: 60px; }
+    height: 95vh; }
+    .nosotros-wrapper .nosotros-head #nosotros-p2 .p2-link i {
+      display: inline-block; }
+  .nosotros-icons {
+    flex-direction: row; }
   .nosotros-head div p {
     max-width: 800px; } }
 
@@ -723,10 +751,8 @@ input {
     padding-bottom: 40px; }
   .contact-head {
     margin-top: 40px; }
-  .nosotros-section {
-    padding: 20px; }
   .nosotros-head {
-    padding: 200px; } }
+    padding: 150px; } }
 
 /* DESKTOP FULL SIZE */
 @media (min-width: 1440px) {

@@ -1,16 +1,16 @@
 
 .nosotros-wrapper {
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 5vh;
     display: grid;
     gap: 20px;
-    padding-top: 80px;
-  
-      animation-name: fade-in-up;
+    
+    animation-name: fade-in-up;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 1s;
   }
-  
+
   .nosotros-head {
     @extend .flex-center-all;
   
@@ -18,17 +18,21 @@
     text-align: center;
     color: white;
     position: relative;
-    padding: 70px;
-    font-size: 1.3em;
+    padding: 30px;
+    height: 95vh;
+    min-height: 200px;
+    font-size: 1.2em;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 
     div h1 {  
       position: relative;
+      margin: 20px;
+      font-weight: 800;
 
       p {
         position: relative;
@@ -39,7 +43,29 @@
     }
 
     #nosotros-p2 {
+      position: relative;
       font-weight: 700;
+      max-width: 480px;
+      margin: auto;
+      
+
+      .p2-link{
+        color: black;
+        font-weight: 800;
+        transition: 0.3s all ease;
+        border-radius: 10px;
+
+        i{
+          display: none;
+        }
+
+        &:hover{
+          color: rgb(255, 255, 255);
+          padding: 5px;
+          background-color: #000000;
+        }
+
+      }
     }
 
     &::before {
@@ -56,6 +82,10 @@
     }
   }
 
+.nosotros-icons{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 
 $social-colors: (
     twitter: #74ccff,
@@ -64,19 +94,23 @@ $social-colors: (
 
 @each $social, $color in $social-colors {
     .boton-redes-#{$social}{
-      @include padding-sides(30px, 30px);
-      @include padding-top-bottom(5px, 5px);
+      @include padding-sides(50px, 50px);
+      @include padding-top-bottom(10px, 10px);
         position: relative;
-        margin: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
         border-radius: 10px;
         color: white; 
         border: none;
         background-color: $color;
 
-        a:hover{
-          color: black;
+        &:hover{
+          background-color: rgb(255, 255, 255);
+          color: $color;
           transition: 0.3s all ease;
         }
         
     }
+}
+
 }
