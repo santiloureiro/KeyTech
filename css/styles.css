@@ -253,7 +253,7 @@ input {
   .head-section::before {
     content: "";
     position: fixed;
-    top: 5%;
+    top: 0%;
     right: 0%;
     bottom: 0%;
     left: 0%;
@@ -762,21 +762,6 @@ input {
     padding-bottom: 60px;
     background-color: white;
     border-radius: 20px; }
-  .breadcrumb-wrapper {
-    display: flex;
-    background-color: #ffff;
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 15px;
-    padding-left: 20px;
-    width: 100%;
-    border-radius: 10px;
-    margin-right: auto; }
-  .breadcrumb-container {
-    background-color: #ffff; }
-  .breadcrumb li,
-  .breadcrumb li {
-    font-weight: 500; }
   .product-wrapper {
     padding-top: 40px;
     padding-bottom: 40px; }
