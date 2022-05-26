@@ -430,6 +430,14 @@ input {
   height: auto;
   margin: auto; }
 
+.btn {
+  background-color: #ab66ff;
+  border: none;
+  color: white; }
+  .btn:hover {
+    background-color: violet;
+    color: white; }
+
 .product-head {
   text-align: center;
   display: flex;
