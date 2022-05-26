@@ -124,6 +124,20 @@ a {
   
   }
   
+//Botones Bootstrap
+
+  .btn{
+    background-color: $magenta;
+    border: none;
+    color: white;
+
+    &:hover{
+      background-color: violet;
+      color: white;
+    }
+  }
+
+
 //Formulario
   
   .contact-form {
