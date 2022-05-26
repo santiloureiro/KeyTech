@@ -10,7 +10,8 @@
     grid-template-columns: repeat(2 1fr);
     grid-template-areas: "header-text header-img";
 
-    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: left;
     place-items: center start;
   }
@@ -236,9 +237,6 @@
     height: 200px;
   }
 
-  .head-section {
-    width: 90%;
-  }
 
   .featured-images div {
     padding-left: 25px;

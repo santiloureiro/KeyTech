@@ -82,8 +82,6 @@ nav {
 
 /* CONTENIDO PRINCIPAL */
 .main-wrapper {
-  width: 90%;
-  max-width: 90%;
   margin: 60px auto;
   display: grid;
   gap: 20px;
@@ -244,9 +242,22 @@ input {
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr;
-  height: 80vh;
+  height: 90vh;
   text-align: center;
-  place-items: center; }
+  place-items: center;
+  transition: 0.3s all ease; }
+  .head-section::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-image: url(https://res.cloudinary.com/djccefmjp/image/upload/v1653526473/Mechanical-Keyboard_audpv3.png);
+    background-size: cover;
+    background-position: top;
+    opacity: 0.07;
+    z-index: -1; }
 
 #header-text {
   grid-area: header-text;
@@ -367,10 +378,12 @@ input {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin: 20px; }
   .animation-video-wrapper div h3 {
     padding: 10px;
     font-size: 1.4em;
+    margin: 20px;
     margin-bottom: 30px; }
 
 .animation-video {
@@ -621,7 +634,8 @@ input {
   .head-section {
     grid-template-columns: repeat(2 1fr);
     grid-template-areas: "header-text header-img";
-    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: left;
     place-items: center start; }
   #header-text {
@@ -758,8 +772,6 @@ input {
 @media (min-width: 1440px) {
   #header-img img {
     height: 200px; }
-  .head-section {
-    width: 90%; }
   .featured-images div {
     padding-left: 25px;
     padding-right: 25px; }
