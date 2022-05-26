@@ -246,7 +246,7 @@ input {
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr;
-  height: 90vh;
+  height: 80vh;
   text-align: center;
   place-items: center;
   transition: 0.3s all ease; }
@@ -258,8 +258,8 @@ input {
     bottom: 0%;
     left: 0%;
     background-image: url(https://res.cloudinary.com/djccefmjp/image/upload/v1653526473/Mechanical-Keyboard_audpv3.png);
-    background-size: cover;
     background-position: top;
+    background-size: cover;
     opacity: 0.07;
     z-index: -3; }
 
