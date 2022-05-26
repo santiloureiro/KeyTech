@@ -447,13 +447,29 @@ input {
       color: #3b3b3b; }
 
 .breadcrumb-wrapper {
-  display: none; }
-  .breadcrumb-wrapper .breadcrumb-item a {
-    color: #3e80fc; }
+  display: flex;
+  background-color: #ffff;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+  width: 100%;
+  border-radius: 10px;
+  margin-right: auto; }
+
+.breadcrumb-container {
+  background-color: #ffff; }
+
+.breadcrumb li,
+.breadcrumb li {
+  font-weight: 500; }
+
+.breadcrumb-item a {
+  color: #3e80fc; }
 
 .product-wrapper {
-  padding-top: 70px;
-  padding-bottom: 70px; }
+  padding-top: 30px;
+  padding-bottom: 40px; }
 
 .item-head {
   display: grid;
