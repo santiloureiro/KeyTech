@@ -150,8 +150,8 @@
 
   .video-section {
     margin-bottom: 60px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 
     .animation-video-wrapper {
       flex-direction: row-reverse;
@@ -165,6 +165,8 @@
         width: 70%;
         height: fit-content;
         border-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
         justify-content: flex-start;
       }
     }
@@ -221,7 +223,6 @@
   #header-img img {
     height: 200px;
   }
-
 
   .featured-images div {
     padding-left: 25px;

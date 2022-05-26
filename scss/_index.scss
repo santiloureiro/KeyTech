@@ -187,20 +187,21 @@
   }
   
   .animation-video-wrapper{
+    @extend .glassmorphism-background;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 50px;
+    border-radius: 20px;
     margin: 10px;
 
 
 
     div h3{
-      @extend .glassmorphism-background;
       padding: 10px;
       font-size: 1.4em;
+      font-weight: 700;
       margin: 30px;
       margin-bottom: 30px;
 
@@ -209,9 +210,11 @@
   
   .animation-video{
     display: flex;
-    width: 90%;
+    width: 100%;
     height: fit-content;
     border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     justify-content: center;
   }
   

@@ -1,5 +1,5 @@
 .glassmorphism-background, .contact-form, textarea,
-input, .send-button, .featured-wrapper, .animation-video-wrapper div h3, .contact-social ul .social-button {
+input, .send-button, .featured-wrapper, .animation-video-wrapper, .contact-social ul .social-button {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
@@ -383,19 +383,22 @@ input:focus {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 50px;
+  border-radius: 20px;
   margin: 10px; }
   .animation-video-wrapper div h3 {
     padding: 10px;
     font-size: 1.4em;
+    font-weight: 700;
     margin: 30px;
     margin-bottom: 30px; }
 
 .animation-video {
   display: flex;
-  width: 90%;
+  width: 100%;
   height: fit-content;
   border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   justify-content: center; }
 
 .contact-section {
@@ -739,8 +742,8 @@ input:focus {
     display: flex; }
   .video-section {
     margin-bottom: 60px;
-    margin-left: 5%;
-    margin-right: 5%; }
+    margin-left: 3%;
+    margin-right: 3%; }
     .video-section .animation-video-wrapper {
       flex-direction: row-reverse; }
       .video-section .animation-video-wrapper .video-title {
@@ -750,6 +753,8 @@ input:focus {
         width: 70%;
         height: fit-content;
         border-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
         justify-content: flex-start; }
   .footer-columns {
     display: grid;
