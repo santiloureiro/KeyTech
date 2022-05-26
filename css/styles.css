@@ -631,11 +631,11 @@ input:focus {
     border-radius: 10px;
     color: white;
     border: none;
-    background-color: #74ccff; }
+    background-color: #74ccff;
+    transition: 0.3s all ease; }
     .nosotros-icons .boton-redes-twitter:hover {
       background-color: white;
-      color: #74ccff;
-      transition: 0.3s all ease; }
+      color: #74ccff; }
   .nosotros-icons .boton-redes-instagram {
     padding-left: 50px;
     padding-right: 50px;
@@ -647,11 +647,11 @@ input:focus {
     border-radius: 10px;
     color: white;
     border: none;
-    background-color: #ff38cd; }
+    background-color: #ff38cd;
+    transition: 0.3s all ease; }
     .nosotros-icons .boton-redes-instagram:hover {
       background-color: white;
-      color: #ff38cd;
-      transition: 0.3s all ease; }
+      color: #ff38cd; }
 
 /* TABLET */
 @media (min-width: 765px) {

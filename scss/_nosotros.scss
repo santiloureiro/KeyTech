@@ -98,11 +98,11 @@ $social-colors: (
         color: white; 
         border: none;
         background-color: $color;
+        transition: 0.3s all ease;
 
         &:hover{
           background-color: rgb(255, 255, 255);
           color: $color;
-          transition: 0.3s all ease;
         }
         
     }
