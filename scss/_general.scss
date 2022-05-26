@@ -4,6 +4,11 @@
     padding: 0;
     list-style: none;
   }
+
+::selection {
+    color: rgb(207, 15, 198);
+    background: rgb(153, 198, 250);
+  }
     
 a {
     text-decoration: none;

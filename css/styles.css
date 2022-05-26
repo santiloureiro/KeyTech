@@ -1,5 +1,5 @@
 .glassmorphism-background, .contact-form, textarea,
-input, .send-button, .animation-video-wrapper div h3, .contact-social ul .social-button {
+input, .send-button, .featured-wrapper, .animation-video-wrapper div h3, .contact-social ul .social-button {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
@@ -17,6 +17,10 @@ input, .send-button, .animation-video-wrapper div h3, .contact-social ul .social
   margin: 0;
   padding: 0;
   list-style: none; }
+
+::selection {
+  color: #cf0fc6;
+  background: #99c6fa; }
 
 a {
   text-decoration: none;
@@ -337,10 +341,7 @@ input {
   margin-right: 5%; }
 
 .featured-wrapper {
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  border: 0px;
   border-radius: 10px;
   margin-bottom: 100px; }
 
@@ -546,13 +547,10 @@ input {
   color: white;
   position: relative;
   padding: 30px;
-  height: 95vh;
+  height: 100vh;
   min-height: 200px;
-  font-size: 1.2em;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.18); }
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.05); }
   .nosotros-head div h1 {
     position: relative;
     margin: 20px;
@@ -580,7 +578,7 @@ input {
         background-color: #000000; }
   .nosotros-head::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -588,7 +586,8 @@ input {
     background-image: url(../resources/custom-keyboard.png);
     background-size: cover;
     background-position: top center;
-    opacity: 0.07; }
+    opacity: 0.07;
+    z-index: -1; }
 
 .nosotros-icons {
   margin-top: 20px;
