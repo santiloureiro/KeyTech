@@ -687,6 +687,20 @@ input:focus {
   .us-button {
     width: 180px;
     margin-left: 20px; }
+  .video-section {
+    margin-bottom: 60px; }
+    .video-section .animation-video-wrapper {
+      flex-direction: row-reverse; }
+      .video-section .animation-video-wrapper .video-title {
+        justify-content: flex-start;
+        font-size: 1.2em; }
+      .video-section .animation-video-wrapper .animation-video {
+        width: 70%;
+        height: fit-content;
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        justify-content: flex-start; }
   .form-info textarea {
     width: 400px;
     max-width: 400px;
@@ -741,21 +755,8 @@ input:focus {
   .carousel-caption {
     display: flex; }
   .video-section {
-    margin-bottom: 60px;
     margin-left: 3%;
     margin-right: 3%; }
-    .video-section .animation-video-wrapper {
-      flex-direction: row-reverse; }
-      .video-section .animation-video-wrapper .video-title {
-        justify-content: flex-start;
-        font-size: 1.2em; }
-      .video-section .animation-video-wrapper .animation-video {
-        width: 70%;
-        height: fit-content;
-        border-radius: 20px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        justify-content: flex-start; }
   .footer-columns {
     display: grid;
     grid-template-columns: repeat(4 1fr);
