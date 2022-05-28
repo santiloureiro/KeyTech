@@ -1,5 +1,5 @@
 .glassmorphism-background, .contact-form, textarea,
-input, .send-button, .featured-wrapper, .animation-video-wrapper, .card, .card .card-body, .contact-social ul .social-button {
+input, .send-button, .featured-wrapper, .animation-video-wrapper, .contact-social ul .social-button {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
@@ -413,8 +413,10 @@ input:focus {
   padding-top: 10px;
   width: 70%;
   border: none;
+  background-color: white;
   border-radius: 5px; }
   .card .card-body {
+    background-color: white;
     box-shadow: none;
     margin-top: 20px;
     border-radius: 5px;
