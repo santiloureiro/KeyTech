@@ -1,5 +1,5 @@
 .glassmorphism-background, .contact-form, textarea,
-input, .send-button, .featured-wrapper, .animation-video-wrapper, .contact-social ul .social-button {
+input, .send-button, .featured-wrapper, .animation-video-wrapper, .card, .card .card-body, .contact-social ul .social-button {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
@@ -404,36 +404,32 @@ input:focus {
 .contact-section {
   grid-area: contact; }
 
-.product-card {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  text-align: center;
-  border-radius: 20px;
-  padding: 25px;
-  width: 80%; }
-
-.products-imgs {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-  gap: 30px;
-  padding-bottom: 50px; }
-  .products-imgs div h3 {
-    padding-top: 20px; }
-  .products-imgs div h3,
-  .products-imgs div p {
-    color: black;
-    font-size: 13px;
-    text-align: center;
-    transition: all 0.3s ease 0s; }
+.product-page-wrapper {
+  width: 95%;
+  margin: auto;
+  margin-top: 5vh; }
 
 .card {
   padding-top: 10px;
-  width: 90%; }
+  width: 70%;
+  border: none;
+  border-radius: 5px; }
+  .card .card-body {
+    box-shadow: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    border: none; }
+    .card .card-body .card-text {
+      color: black; }
+      .card .card-body .card-text h5 {
+        font-size: 1.1em; }
 
 .card-img-top {
-  width: 90%;
+  width: 75%;
   height: auto;
   margin: auto; }
 
